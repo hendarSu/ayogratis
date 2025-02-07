@@ -32,15 +32,17 @@ export default function Home() {
           gtag('config', 'G-Q3QFRY6RY4');
         `}
       </Script>
-      <main className="min-h-screen bg-background">
+      <main className="min-h-screen">
         {/* Floating WhatsApp Button */}
         <Link href="https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website" target="_blank">
           <div className="fixed bottom-4 right-4 md:bottom-8 md:right-8 bg-primary text-primary-foreground p-3 rounded-full shadow-lg cursor-pointer">
             <MessageCircle className="w-6 h-6" />
           </div>
         </Link>
+        {/* Squircles Section */}
+        <div className="squircles inset-0"></div>
         {/* Hero Section */}
-        <section className="bg-secondary">
+        <section>
           <div className="container px-4 py-16 sm:py-24 mx-auto">
             <div className="max-w-3xl mx-auto text-center space-y-6">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary">
@@ -213,6 +215,7 @@ export default function Home() {
 
         {/* Terms & Conditions Section */}
         <section className="py-16 sm:py-24">
+          {/* <div className="squircles inset-0"></div> */}
           <div className="container px-4 mx-auto">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl sm:text-4xl font-bold mb-4">Syarat & Ketentuan</h2>
