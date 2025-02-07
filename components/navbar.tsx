@@ -16,11 +16,11 @@ export function Navbar() {
             AyoGratis
           </Link>
 
-          <nav
+          {/* <nav
             className={`${isMenuOpen ? "block" : "hidden"} md:flex absolute md:relative top-16 left-0 right-0 bg-background md:top-0 z-20`}
           >
             <ul className="flex flex-col md:flex-row items-center gap-6 p-4 md:p-0">
-              {/* <li>
+              <li>
                 <Link href="#" className="text-muted-foreground hover:text-primary">
                   Company Profile
                 </Link>
@@ -34,9 +34,9 @@ export function Navbar() {
                 <Link href="#" className="text-muted-foreground hover:text-primary">
                   Toko Online
                 </Link>
-              </li> */}
+              </li>
             </ul>
-          </nav>
+          </nav> */}
 
           <div className="flex items-center gap-4">
             {/* <Button variant="ghost" className="hidden md:inline-flex notion-button">
@@ -46,9 +46,9 @@ export function Navbar() {
               <MessageCircle className="w-4 h-4 mr-2" />
               Hubungi Kami
             </Button>
-            <Button variant="ghost" className="md:hidden notion-button" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {/* <Button variant="ghost" className="md:hidden notion-button" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X /> : <Menu />}
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
