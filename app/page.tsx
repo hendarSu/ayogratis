@@ -20,6 +20,15 @@ export default function Home() {
         <meta name="twitter:title" content="Buat Website Gratis untuk Bisnis Anda" />
         <meta name="twitter:description" content="Tingkatkan kehadiran online Anda dengan website profesional tanpa biaya. Solusi digital untuk semua jenis bisnis." />
         <meta name="twitter:image" content="/assets/twitter-image.jpg" />
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3QFRY6RY4"></script>
+        <script>
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Q3QFRY6RY4');`}
+        </script>
       </Head>
       <main className="min-h-screen bg-background">
         {/* Floating WhatsApp Button */}
