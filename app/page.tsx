@@ -1,101 +1,178 @@
-import Image from "next/image";
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import { Building2, Newspaper, ShoppingBag, Check, ArrowRight, Users, TrendingUp, Globe } from "lucide-react"
+import Link from "next/link"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section className="bg-secondary">
+        <div className="container px-4 py-16 sm:py-24 mx-auto">
+          <div className="max-w-3xl mx-auto text-center space-y-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary">
+              Buat Website Gratis untuk Bisnis Anda
+            </h1>
+            <p className="text-lg sm:text-xl text-muted-foreground">
+              Tingkatkan kehadiran online Anda dengan website profesional tanpa biaya. Solusi digital untuk semua jenis
+              bisnis.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="https://wa.me/6285183013901?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
+                <Button size="lg" className="notion-button">
+                  Mulai Buat Website
+                </Button>
+              </Link>
+              <Link href="https://wa.me/6285183013901?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
+                <Button size="lg" variant="outline" className="notion-button bg-background">
+                  Pelajari Lebih Lanjut
+                </Button>
+              </Link>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      </section>
+
+      {/* Website Types Section */}
+      <section className="py-16 sm:py-24">
+        <div className="container px-4 mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">Pilih Website Sesuai Kebutuhan Anda</h2>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                title: "Toko Online",
+                description: "Jual produk Anda langsung ke pelanggan secara online",
+                icon: ShoppingBag,
+                features: ["Katalog Produk", "Sistem Keranjang Belanja", "Proses Checkout", "Manajemen Inventori"],
+              },
+              {
+                title: "Portal Berita",
+                description: "Buat portal berita atau blog dengan konten yang selalu up-to-date",
+                icon: Newspaper,
+                features: ["Manajemen Artikel", "Kategori & Tag", "Komentar Pembaca", "Integrasi Media Sosial"],
+              },
+              {
+                title: "Company Profile",
+                description: "Tampilkan profil dan layanan perusahaan Anda secara profesional",
+                icon: Building2,
+                features: ["Halaman Tentang Kami", "Portofolio Proyek", "Formulir Kontak", "Testimoni Klien"],
+              }
+            ].map((type, index) => (
+              <Card key={index} className="border border-border hover:shadow-md transition-shadow">
+                <CardHeader>
+                  <type.icon className="w-10 h-10 text-primary mb-4" />
+                  <CardTitle className="text-2xl">{type.title}</CardTitle>
+                  <CardDescription>{type.description}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <Image
+                      src="/assets/placeholder.svg"
+                      alt={`${type.title} Preview`}
+                      width={450}
+                      height={300}
+                      className="rounded-md mb-6 w-full"
+                    />
+                    <ul className="space-y-3">
+                      {type.features.map((feature) => (
+                        <li key={feature} className="flex items-center gap-2">
+                          <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                          <span className="text-muted-foreground">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <Link href={`https://wa.me/6285183013901?text=Hai%20ka,%20saya%20ingin%20membuat%20website%20${type.title}`}>
+                      <Button className="notion-button w-full mt-6">
+                        Buat {type.title} <ArrowRight className="w-4 h-4 ml-2" />
+                      </Button>
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-16 sm:py-24 bg-secondary">
+        <div className="container px-4 mx-auto">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-4">Manfaat Website untuk Bisnis Anda</h2>
+            <p className="text-muted-foreground">Tingkatkan potensi bisnis Anda dengan kehadiran online yang kuat</p>
+          </div>
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                title: "Jangkau Audiens Lebih Luas",
+                description: "Perluas jangkauan bisnis Anda melampaui batas geografis",
+                icon: Globe,
+              },
+              {
+                title: "Tingkatkan Kredibilitas",
+                description: "Bangun kepercayaan pelanggan dengan kehadiran online profesional",
+                icon: Users,
+              },
+              {
+                title: "Promosi 24/7",
+                description: "Promosikan produk dan layanan Anda setiap saat tanpa batasan waktu",
+                icon: TrendingUp,
+              },
+              {
+                title: "Hemat Biaya Marketing",
+                description: "Kurangi biaya pemasaran dengan strategi digital yang efektif",
+                icon: ShoppingBag,
+              },
+              {
+                title: "Analisis Performa Bisnis",
+                description: "Pantau dan analisis kinerja bisnis Anda dengan mudah",
+                icon: TrendingUp,
+              },
+              {
+                title: "Bersaing di Era Digital",
+                description: "Tingkatkan daya saing bisnis Anda di pasar yang semakin digital",
+                icon: Users,
+              },
+            ].map((benefit, index) => (
+              <Card key={index} className="border-none shadow-none bg-transparent">
+                <CardHeader>
+                  <benefit.icon className="w-10 h-10 text-primary mb-4" />
+                  <CardTitle className="text-xl">{benefit.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{benefit.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 sm:py-24 bg-primary text-primary-foreground">
+        <div className="container px-4 mx-auto text-center">
+          <div className="max-w-2xl mx-auto space-y-6">
+            <h2 className="text-3xl sm:text-4xl font-bold">Siap Membawa Bisnis Anda ke Dunia Digital?</h2>
+            <p className="text-lg opacity-90">
+              Mulai buat website profesional untuk bisnis Anda sekarang, tanpa biaya dan tanpa perlu keahlian coding.
+            </p>
+            
+            <br />
+            
+            <Link href="https://wa.me/6285183013901?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
+              <Button
+                size="lg"
+                variant="secondary"
+                className="notion-button bg-primary-foreground text-primary hover:bg-accent"
+              >
+                Buat Website Sekarang
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
+  )
 }
+
