@@ -1,4 +1,4 @@
-import Image from "next/image"
+// import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Building2, Newspaper, ShoppingBag, Check, ArrowRight, Users, TrendingUp, Globe } from "lucide-react"
