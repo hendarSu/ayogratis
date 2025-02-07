@@ -34,12 +34,12 @@ export default function Home() {
                 bisnis.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="https://wa.me/6285183013901?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
+                <Link href="https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
                   <Button size="lg" className="notion-button">
                     Mulai Buat Website
                   </Button>
                 </Link>
-                <Link href="https://wa.me/6285183013901?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
+                <Link href="https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
                   <Button size="lg" variant="outline" className="notion-button bg-background">
                     Pelajari Lebih Lanjut
                   </Button>
@@ -97,7 +97,7 @@ export default function Home() {
                           </li>
                         ))}
                       </ul>
-                      <Link href={`https://wa.me/6285183013901?text=Hai%20ka,%20saya%20ingin%20membuat%20website%20${type.title}`}>
+                      <Link href={`https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website%20${type.title}`}>
                         <Button className="notion-button w-full mt-6">
                           Buat {type.title} <ArrowRight className="w-4 h-4 ml-2" />
                         </Button>
@@ -175,7 +175,7 @@ export default function Home() {
               
               <br />
               
-              <Link href="https://wa.me/6285183013901?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
+              <Link href="https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
                 <Button
                   size="lg"
                   variant="secondary"
