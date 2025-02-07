@@ -1,3 +1,4 @@
+import Script from "next/script"
 // import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
@@ -20,16 +21,17 @@ export default function Home() {
         <meta name="twitter:title" content="Buat Website Gratis untuk Bisnis Anda" />
         <meta name="twitter:description" content="Tingkatkan kehadiran online Anda dengan website profesional tanpa biaya. Solusi digital untuk semua jenis bisnis." />
         <meta name="twitter:image" content="/assets/twitter-image.jpg" />
-        {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3QFRY6RY4"></script>
-        <script dangerouslySetInnerHTML={{ __html: `
+      </Head>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3QFRY6RY4"></Script>
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
           gtag('config', 'G-Q3QFRY6RY4');
-        `}} />
-      </Head>
+        `}
+      </Script>
       <main className="min-h-screen bg-background">
         {/* Floating WhatsApp Button */}
         <Link href="https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website" target="_blank">
