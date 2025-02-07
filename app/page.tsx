@@ -201,7 +201,7 @@ export default function Home() {
         </section>
 
         {/* Terms & Conditions Section */}
-        <section className="py-16 sm:py-24 bg-secondary">
+        <section className="py-16 sm:py-24">
           <div className="container px-4 mx-auto">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl sm:text-4xl font-bold mb-4">Syarat & Ketentuan</h2>
