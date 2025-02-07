@@ -53,7 +53,7 @@ export default function Home() {
         <section className="py-16 sm:py-24">
           <div className="container px-4 mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">Pilih Website Sesuai Kebutuhan Anda</h2>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
               {[
                 {
                   title: "Toko Online",
@@ -72,6 +72,12 @@ export default function Home() {
                   description: "Tampilkan profil dan layanan perusahaan Anda secara profesional",
                   icon: Building2,
                   features: ["Halaman Tentang Kami", "Portofolio Proyek", "Formulir Kontak", "Testimoni Klien"],
+                },
+                {
+                  title: "Personal Branding",
+                  description: "Bangun personal branding Anda dengan website profesional",
+                  icon: Users,
+                  features: ["Profil Pribadi", "Portofolio", "Blog Pribadi", "Testimoni"],
                 }
               ].map((type, index) => (
                 <Card key={index} className="border border-border hover:shadow-md transition-shadow">
