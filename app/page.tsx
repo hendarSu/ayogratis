@@ -82,13 +82,13 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-4">
-                      <Image
+                      {/* <Image
                         src="/assets/placeholder.svg"
                         alt={`${type.title} Preview`}
                         width={450}
                         height={300}
                         className="rounded-md mb-6 w-full"
-                      />
+                      /> */}
                       <ul className="space-y-3">
                         {type.features.map((feature) => (
                           <li key={feature} className="flex items-center gap-2">
