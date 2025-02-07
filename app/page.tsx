@@ -16,11 +16,22 @@ export default function Home() {
         <meta property="og:title" content="Buat Website Gratis untuk Bisnis Anda" />
         <meta property="og:description" content="Tingkatkan kehadiran online Anda dengan website profesional tanpa biaya. Solusi digital untuk semua jenis bisnis." />
         <meta property="og:image" content="/assets/og-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com" />
+        <meta property="og:url" content="https://ayogratis.web.id" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Buat Website Gratis untuk Bisnis Anda" />
         <meta name="twitter:description" content="Tingkatkan kehadiran online Anda dengan website profesional tanpa biaya. Solusi digital untuk semua jenis bisnis." />
         <meta name="twitter:image" content="/assets/twitter-image.jpg" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://ayogratis.web.id" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://ayogratis.web.id",
+            "name": "Website Gratis untuk Bisnis Anda",
+            "description": "Tingkatkan kehadiran online Anda dengan website profesional tanpa biaya. Solusi digital untuk semua jenis bisnis.",
+          })}
+        </script>
       </Head>
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3QFRY6RY4"></Script>
       <Script id="google-analytics" strategy="afterInteractive">
