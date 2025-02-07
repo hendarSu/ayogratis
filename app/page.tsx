@@ -22,13 +22,13 @@ export default function Home() {
         <meta name="twitter:image" content="/assets/twitter-image.jpg" />
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3QFRY6RY4"></script>
-        <script>
-          {`window.dataLayer = window.dataLayer || [];
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-Q3QFRY6RY4');`}
-        </script>
+          gtag('config', 'G-Q3QFRY6RY4');
+        `}} />
       </Head>
       <main className="min-h-screen bg-background">
         {/* Floating WhatsApp Button */}
