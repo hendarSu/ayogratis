@@ -1,7 +1,7 @@
 // import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { Building2, Newspaper, ShoppingBag, Check, ArrowRight, Users, TrendingUp, Globe } from "lucide-react"
+import { Building2, Newspaper, ShoppingBag, Check, ArrowRight, Users, TrendingUp, Globe, MessageCircle } from "lucide-react"
 import Link from "next/link"
 import Head from "next/head"
 
@@ -22,6 +22,12 @@ export default function Home() {
         <meta name="twitter:image" content="/assets/twitter-image.jpg" />
       </Head>
       <main className="min-h-screen bg-background">
+        {/* Floating WhatsApp Button */}
+        <Link href="https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website" target="_blank">
+          <div className="fixed bottom-4 right-4 md:bottom-8 md:right-8 bg-primary text-primary-foreground p-3 rounded-full shadow-lg cursor-pointer">
+            <MessageCircle className="w-6 h-6" />
+          </div>
+        </Link>
         {/* Hero Section */}
         <section className="bg-secondary">
           <div className="container px-4 py-16 sm:py-24 mx-auto">

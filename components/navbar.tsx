@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Menu, X, MessageCircle } from "lucide-react"
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -42,7 +42,10 @@ export function Navbar() {
             {/* <Button variant="ghost" className="hidden md:inline-flex notion-button">
               Masuk
             </Button> */}
-            <Button className="hidden md:inline-flex notion-button">Daftar</Button>
+            <Button className="hidden md:inline-flex notion-button">
+              <MessageCircle className="w-4 h-4 mr-2" />
+              Hubungi Kami
+            </Button>
             <Button variant="ghost" className="md:hidden notion-button" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X /> : <Menu />}
             </Button>
