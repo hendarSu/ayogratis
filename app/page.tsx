@@ -33,6 +33,7 @@ export default function Home() {
           })}
         </script>
       </Head>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3QFRY6RY4"></Script>
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
