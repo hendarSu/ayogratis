@@ -1,13 +1,10 @@
 "use client"
 
-import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Menu, X, MessageCircle } from "lucide-react"
+import { MessageCircle } from "lucide-react"
 
 export function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-
   return (
     <header className="border-b border-border">
       <div className="container mx-auto px-4">
