@@ -187,6 +187,18 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Terms & Conditions Section */}
+        <section className="py-16 sm:py-24 bg-secondary">
+          <div className="container px-4 mx-auto">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4">Syarat & Ketentuan</h2>
+              <p className="text-lg text-muted-foreground">
+                Untuk sewa server dan pembelian domain ditanggung oleh pengguna.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   )
