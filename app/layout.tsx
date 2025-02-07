@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import type React from "react"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Ayo Gratis - Buat Website Gratis",
@@ -16,6 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id">
+      <Analytics/>
       <body className="bg-background text-foreground">
         <Navbar />
         {children}
