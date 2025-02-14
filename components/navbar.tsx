@@ -39,9 +39,11 @@ export function Navbar() {
             {/* <Button variant="ghost" className="hidden md:inline-flex notion-button">
               Masuk
             </Button> */}
-            <Button className="hidden md:inline-flex notion-button">
+            <Button asChild className="hidden md:inline-flex notion-button">
+              <Link href="https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
               <MessageCircle className="w-4 h-4 mr-2" />
               Hubungi Kami
+              </Link>
             </Button>
             {/* <Button variant="ghost" className="md:hidden notion-button" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X /> : <Menu />}
