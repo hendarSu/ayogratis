@@ -83,64 +83,68 @@ export default function Home() {
         <section className="py-16 sm:py-24">
           <div className="container px-4 mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">Pilih Website Sesuai Kebutuhan Kamu</h2>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {[
-                {
-                  title: "Toko Online",
-                  description: "Jual produk Kamu langsung ke pelanggan secara online",
-                  icon: ShoppingBag,
-                  features: ["Katalog Produk", "Sistem Keranjang Belanja", "Proses Checkout", "Manajemen Inventori"],
-                },
-                {
-                  title: "Portal Berita",
-                  description: "Buat portal berita atau blog dengan konten yang selalu up-to-date",
-                  icon: Newspaper,
-                  features: ["Manajemen Artikel", "Kategori & Tag", "Komentar Pembaca", "Integrasi Media Sosial"],
-                },
-                {
-                  title: "Company Profile",
-                  description: "Tampilkan profil dan layanan perusahaan Kamu secara profesional",
-                  icon: Building2,
-                  features: ["Halaman Tentang Kami", "Portofolio Proyek", "Formulir Kontak", "Testimoni Klien"],
-                },
-                {
-                  title: "Personal Branding",
-                  description: "Bangun personal branding Kamu dengan website profesional",
-                  icon: Users,
-                  features: ["Profil Pribadi", "Portofolio", "Blog Pribadi", "Testimoni"],
-                }
+          {
+            title: "Toko Online",
+            description: "Jual produk Kamu langsung ke pelanggan secara online",
+            icon: ShoppingBag,
+            features: ["Katalog Produk", "Sistem Keranjang Belanja", "Proses Checkout", "Manajemen Inventori"],
+            bgColor: "bg-pastel-pink",
+          },
+          {
+            title: "Landing Page",
+            description: "Buat landing page untuk meningkatkan visitor dan penjualan product kamu",
+            icon: ShoppingBag,
+            features: ["Headline Menarik", "CTA (Call-to-Action)", "Penjelasan Produk", "Form Pembelian"],
+            bgColor: "bg-pastel-blue",
+          },
+          {
+            title: "Portal Berita",
+            description: "Buat portal berita atau blog dengan konten yang selalu up-to-date",
+            icon: Newspaper,
+            features: ["Manajemen Artikel", "Kategori & Tag", "Komentar Pembaca", "Integrasi Media Sosial"],
+            bgColor: "bg-pastel-green",
+          },
+          {
+            title: "Company Profile",
+            description: "Tampilkan profil dan layanan perusahaan Kamu secara profesional",
+            icon: Building2,
+            features: ["Halaman Tentang Kami", "Portofolio Proyek", "Formulir Kontak", "Testimoni Klien"],
+            bgColor: "bg-pastel-yellow",
+          },
+          {
+            title: "Personal Branding",
+            description: "Bangun personal branding Kamu dengan website profesional",
+            icon: Users,
+            features: ["Profil Pribadi", "Portofolio", "Blog Pribadi", "Testimoni"],
+            bgColor: "bg-pastel-purple",
+          }
               ].map((type, index) => (
-                <Card key={index} className="border border-border hover:shadow-md transition-shadow">
-                  <CardHeader>
-                    <type.icon className="w-10 h-10 text-primary mb-4" />
-                    <CardTitle className="text-2xl">{type.title}</CardTitle>
-                    <CardDescription>{type.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      {/* <Image
-                        src="/assets/placeholder.svg"
-                        alt={`${type.title} Preview`}
-                        width={450}
-                        height={300}
-                        className="rounded-md mb-6 w-full"
-                      /> */}
-                      <ul className="space-y-3">
-                        {type.features.map((feature) => (
-                          <li key={feature} className="flex items-center gap-2">
-                            <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                            <span className="text-muted-foreground">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                      <Link href={`https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website%20${type.title}`}>
-                        <Button className="notion-button w-full mt-6">
-                          Buat {type.title} <ArrowRight className="w-4 h-4 ml-2" />
-                        </Button>
-                      </Link>
-                    </div>
-                  </CardContent>
-                </Card>
+          <Card key={index} className={`border border-border hover:shadow-md transition-shadow ${type.bgColor}`}>
+            <CardHeader>
+              <type.icon className="w-10 h-10 text-primary mb-4" />
+              <CardTitle className="text-2xl">{type.title}</CardTitle>
+              <CardDescription>{type.description}</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <ul className="space-y-3">
+            {type.features.map((feature) => (
+              <li key={feature} className="flex items-center gap-2">
+                <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                <span className="text-muted-foreground">{feature}</span>
+              </li>
+            ))}
+                </ul>
+                <Link href={`https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website%20${type.title}`}>
+            <Button className="notion-button w-full mt-6">
+              Buat {type.title} <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
+                </Link>
+              </div>
+            </CardContent>
+          </Card>
               ))}
             </div>
           </div>
