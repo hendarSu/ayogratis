@@ -2,15 +2,16 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { MessageCircle } from "lucide-react"
+import { Instagram, MessageCircle } from "lucide-react"
 
 export function Navbar() {
   return (
     <header className="">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="text-xl font-bold text-primary">
-            AyoGratis
+          <Link href="https://www.instagram.com/websitegratis.official" className="flex items-center">
+                  <Instagram className="w-4 h-4 mr-2" />
+                  AyoGratis
           </Link>
 
           {/* <nav
