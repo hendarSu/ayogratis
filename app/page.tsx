@@ -7,6 +7,44 @@ import Link from "next/link"
 import Head from "next/head"
 
 export default function Home() {
+  const contents = [
+    {
+      title: "Toko Online",
+      description: "Jual produk Kamu langsung ke pelanggan secara online",
+      icon: ShoppingBag,
+      features: ["Katalog Produk", "Sistem Keranjang Belanja", "Proses Checkout", "Manajemen Inventori"],
+      bgColor: "bg-pastel-pink",
+    },
+    {
+      title: "Landing Page",
+      description: "Buat landing page untuk meningkatkan visitor dan penjualan product kamu",
+      icon: ShoppingBag,
+      features: ["Headline Menarik", "CTA (Call-to-Action)", "Penjelasan Produk", "Form Pembelian"],
+      bgColor: "bg-pastel-blue",
+    },
+    {
+      title: "Portal Berita",
+      description: "Buat portal berita atau blog dengan konten yang selalu up-to-date",
+      icon: Newspaper,
+      features: ["Manajemen Artikel", "Kategori & Tag", "Komentar Pembaca", "Integrasi Media Sosial"],
+      bgColor: "bg-pastel-green",
+    },
+    {
+      title: "Company Profile",
+      description: "Tampilkan profil dan layanan perusahaan Kamu secara profesional",
+      icon: Building2,
+      features: ["Halaman Tentang Kami", "Portofolio Proyek", "Formulir Kontak", "Testimoni Klien"],
+      bgColor: "bg-pastel-yellow",
+    },
+    {
+      title: "Personal Branding",
+      description: "Bangun personal branding Kamu dengan website profesional",
+      icon: Users,
+      features: ["Profil Pribadi", "Portofolio", "Blog Pribadi", "Testimoni"],
+      bgColor: "bg-pastel-purple",
+    }
+  ];
+
   return (
     <>
       <Head>
@@ -83,69 +121,57 @@ export default function Home() {
         <section className="py-16 sm:py-24">
           <div className="container px-4 mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">Pilih Website Sesuai Kebutuhan Kamu</h2>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {[
-          {
-            title: "Toko Online",
-            description: "Jual produk Kamu langsung ke pelanggan secara online",
-            icon: ShoppingBag,
-            features: ["Katalog Produk", "Sistem Keranjang Belanja", "Proses Checkout", "Manajemen Inventori"],
-            bgColor: "bg-pastel-pink",
-          },
-          {
-            title: "Landing Page",
-            description: "Buat landing page untuk meningkatkan visitor dan penjualan product kamu",
-            icon: ShoppingBag,
-            features: ["Headline Menarik", "CTA (Call-to-Action)", "Penjelasan Produk", "Form Pembelian"],
-            bgColor: "bg-pastel-blue",
-          },
-          {
-            title: "Portal Berita",
-            description: "Buat portal berita atau blog dengan konten yang selalu up-to-date",
-            icon: Newspaper,
-            features: ["Manajemen Artikel", "Kategori & Tag", "Komentar Pembaca", "Integrasi Media Sosial"],
-            bgColor: "bg-pastel-green",
-          },
-          {
-            title: "Company Profile",
-            description: "Tampilkan profil dan layanan perusahaan Kamu secara profesional",
-            icon: Building2,
-            features: ["Halaman Tentang Kami", "Portofolio Proyek", "Formulir Kontak", "Testimoni Klien"],
-            bgColor: "bg-pastel-yellow",
-          },
-          {
-            title: "Personal Branding",
-            description: "Bangun personal branding Kamu dengan website profesional",
-            icon: Users,
-            features: ["Profil Pribadi", "Portofolio", "Blog Pribadi", "Testimoni"],
-            bgColor: "bg-pastel-purple",
-          }
-              ].map((type, index) => (
-          <Card key={index} className={`border border-border hover:shadow-md transition-shadow ${type.bgColor}`}>
-            <CardHeader>
-              <type.icon className="w-10 h-10 text-primary mb-4" />
-              <CardTitle className="text-2xl">{type.title}</CardTitle>
-              <CardDescription>{type.description}</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <ul className="space-y-3">
-            {type.features.map((feature) => (
-              <li key={feature} className="flex items-center gap-2">
-                <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-muted-foreground">{feature}</span>
-              </li>
-            ))}
-                </ul>
-                <Link href={`https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website%20${type.title}`}>
-            <Button className="notion-button w-full mt-6">
-              Buat {type.title} <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-                </Link>
-              </div>
-            </CardContent>
-          </Card>
+            <div className="flex flex-wrap justify-center gap-4 lg:gap-8">
+              {contents.map((type, index) => (
+                <Card key={index} className={`border-none !shadow-md ${type.bgColor} lg:w-[calc(33.333333%-2rem)] md:w-[calc(50%-1rem)] w-full bg-white`}>
+                  <div className="flex flex-col justify-between h-full">
+                    <div className="flex gap-4 p-6">
+                      <type.icon className="min-w-10 min-h-10 text-primary" />
+                      <div>
+                        <CardTitle className="text-2xl">{type.title}</CardTitle>
+                        <CardDescription>{type.description}</CardDescription>
+                      </div>
+                    </div>
+                    <div className="flex gap-4">
+                      <div className="min-w-10"></div>
+                      <CardContent>
+                        <ul className="space-y-3">
+                          {type.features.map((feature) => (
+                            <li key={feature} className="flex items-center gap-2">
+                              <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                              <span className="text-muted-foreground">{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </CardContent>
+                    </div>
+                  </div>
+                </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-16 sm:py-24 bg-primary text-primary-foreground">
+          <div className="container px-4 mx-auto text-center">
+            <div className="max-w-2xl mx-auto space-y-6">
+              <h2 className="text-3xl sm:text-4xl font-bold">Siap Membawa Bisnis Kamu ke Dunia Digital?</h2>
+              <p className="text-lg opacity-90">
+                Mulai buat website profesional untuk bisnis Kamu sekarang, tanpa biaya dan tanpa perlu keahlian coding.
+              </p>
+
+              <br />
+
+              <Link href="https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
+                <Button
+                  size="lg"
+                  variant="secondary"
+                  className="notion-button bg-primary-foreground text-primary hover:bg-accent"
+                >
+                  Buat Website Sekarang
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -208,13 +234,13 @@ export default function Home() {
         <section className="py-16 sm:py-24 bg-primary text-primary-foreground">
           <div className="container px-4 mx-auto text-center">
             <div className="max-w-2xl mx-auto space-y-6">
-              <h2 className="text-3xl sm:text-4xl font-bold">Siap Membawa Bisnis Kamu ke Dunia Digital?</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold">Ayo, Jangan tunggu lama lagi</h2>
               <p className="text-lg opacity-90">
                 Mulai buat website profesional untuk bisnis Kamu sekarang, tanpa biaya dan tanpa perlu keahlian coding.
               </p>
-              
+
               <br />
-              
+
               <Link href="https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
                 <Button
                   size="lg"
