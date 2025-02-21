@@ -1,8 +1,7 @@
 import Script from "next/script"
-// import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { Building2, Newspaper, ShoppingBag, Check, ArrowRight, Users, TrendingUp, Globe, MessageCircle } from "lucide-react"
+import { Building2, Newspaper, ShoppingBag, Check, Users, TrendingUp, Globe, MessageCircle } from "lucide-react"
 import Link from "next/link"
 import Head from "next/head"
 import Image from "next/image"
@@ -287,7 +286,6 @@ export default function Home() {
 
         {/* Terms & Conditions Section */}
         <section className="py-16 sm:py-24">
-          {/* <div className="squircles inset-0"></div> */}
           <div className="container px-4 mx-auto">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl sm:text-4xl font-bold mb-4">Syarat & Ketentuan</h2>
