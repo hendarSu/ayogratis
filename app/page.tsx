@@ -5,8 +5,41 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Building2, Newspaper, ShoppingBag, Check, ArrowRight, Users, TrendingUp, Globe, MessageCircle } from "lucide-react"
 import Link from "next/link"
 import Head from "next/head"
+import Image from "next/image"
 
 export default function Home() {
+  const benefits = [
+    {
+      title: "Jangkau Audiens Lebih Luas",
+      description: "Perluas jangkauan bisnis Kamu melampaui batas geografis",
+      icon: Globe,
+    },
+    {
+      title: "Tingkatkan Kredibilitas",
+      description: "Bangun kepercayaan pelanggan dengan kehadiran online profesional",
+      icon: Users,
+    },
+    {
+      title: "Promosi 24/7",
+      description: "Promosikan produk dan layanan Kamu setiap saat tanpa batasan waktu",
+      icon: TrendingUp,
+    },
+    {
+      title: "Hemat Biaya Marketing",
+      description: "Kurangi biaya pemasaran dengan strategi digital yang efektif",
+      icon: ShoppingBag,
+    },
+    {
+      title: "Analisis Performa Bisnis",
+      description: "Pantau dan analisis kinerja bisnis Kamu dengan mudah",
+      icon: TrendingUp,
+    },
+    {
+      title: "Bersaing di Era Digital",
+      description: "Tingkatkan daya saing bisnis Kamu di pasar yang semakin digital",
+      icon: Users,
+    },
+  ];
   const contents = [
     {
       title: "Toko Online",
@@ -42,6 +75,21 @@ export default function Home() {
       icon: Users,
       features: ["Profil Pribadi", "Portofolio", "Blog Pribadi", "Testimoni"],
       bgColor: "bg-pastel-purple",
+    }
+  ];
+
+  const clients = [
+    {
+      src: "/images/logo-mufeed.png",
+      alt: "Mufeed Outfit",
+    },
+    {
+      src: "/images/logo-pedeofficial.jpeg",
+      alt: "Pedeo Official",
+    },
+    {
+      src: "/images/logo-narros.jpeg",
+      alt: "Narros",
     }
   ];
 
@@ -152,6 +200,20 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Client Section */}
+        <section className="py-16 sm-py-24 bg-secondary">
+          <div className="container px-4 mx-auto text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold">Klien Yang Pernah Kami Layani</h2>
+            <p className="text-lg opacity-90 mt-6">Klien dari berbagai bidang</p>
+
+            <div className="flex justify-center items-center flex-wrap gap-4 mt-6">
+              {clients.map((partner, index) => (
+                <Image key={index} src={partner.src} alt={partner.alt} title={partner.alt} width={128} height={60} />
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-16 sm:py-24 bg-primary text-primary-foreground">
           <div className="container px-4 mx-auto text-center">
@@ -184,38 +246,7 @@ export default function Home() {
               <p className="text-muted-foreground">Tingkatkan potensi bisnis Kamu dengan kehadiran online yang kuat</p>
             </div>
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {[
-                {
-                  title: "Jangkau Audiens Lebih Luas",
-                  description: "Perluas jangkauan bisnis Kamu melampaui batas geografis",
-                  icon: Globe,
-                },
-                {
-                  title: "Tingkatkan Kredibilitas",
-                  description: "Bangun kepercayaan pelanggan dengan kehadiran online profesional",
-                  icon: Users,
-                },
-                {
-                  title: "Promosi 24/7",
-                  description: "Promosikan produk dan layanan Kamu setiap saat tanpa batasan waktu",
-                  icon: TrendingUp,
-                },
-                {
-                  title: "Hemat Biaya Marketing",
-                  description: "Kurangi biaya pemasaran dengan strategi digital yang efektif",
-                  icon: ShoppingBag,
-                },
-                {
-                  title: "Analisis Performa Bisnis",
-                  description: "Pantau dan analisis kinerja bisnis Kamu dengan mudah",
-                  icon: TrendingUp,
-                },
-                {
-                  title: "Bersaing di Era Digital",
-                  description: "Tingkatkan daya saing bisnis Kamu di pasar yang semakin digital",
-                  icon: Users,
-                },
-              ].map((benefit, index) => (
+              {benefits.map((benefit, index) => (
                 <Card key={index} className="border-none shadow-none bg-transparent">
                   <CardHeader>
                     <benefit.icon className="w-10 h-10 text-primary mb-4" />
