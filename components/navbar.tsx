@@ -9,9 +9,9 @@ export function Navbar() {
     <header className="">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          <Link href="https://www.instagram.com/websitegratis.official" className="flex items-center">
+          <Link href="https://www.instagram.com/websitepro.official" className="flex items-center">
                   <Instagram className="w-4 h-4 mr-2" />
-                  AyoGratis
+                  Website Pro
           </Link>
 
           {/* <nav

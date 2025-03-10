@@ -95,7 +95,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Buat Website Gratis untuk Bisnis Kamu</title>
+        <title>Buat Website untuk Bisnis Kamu</title>
         <meta name="description" content="Tingkatkan kehadiran online Kamu dengan website profesional tanpa biaya. Solusi digital untuk semua jenis bisnis." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="Buat Website Gratis untuk Bisnis Kamu" />
@@ -142,7 +142,7 @@ export default function Home() {
           <div className="container px-4 py-16 sm:py-24 mx-auto">
             <div className="max-w-3xl mx-auto text-center space-y-6">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary">
-                Buat Website Gratis untuk Bisnis Kamu
+                Buat Website untuk Bisnis Kamu
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground">
                 Tingkatkan kehadiran online Kamu dengan website profesional tanpa biaya. Solusi digital untuk semua jenis
@@ -151,7 +151,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
                   <Button size="lg" className="notion-button">
-                    Mulai Buat Website
+                    Mulai Buat
                   </Button>
                 </Link>
                 <Link href="https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
@@ -170,7 +170,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">Pilih Website Sesuai Kebutuhan Kamu</h2>
             <div className="flex flex-wrap justify-center gap-4 lg:gap-8">
               {contents.map((type, index) => (
-                <Card key={index} className={`border-none !shadow-md ${type.bgColor} lg:w-[calc(33.333333%-2rem)] md:w-[calc(50%-1rem)] w-full bg-white`}>
+                <Card key={index} className={`border-none  lg:w-[calc(33.333333%-2rem)] md:w-[calc(50%-1rem)] w-full bg-white`}>
                   <div className="flex flex-col justify-between h-full">
                     <div className="flex gap-4 p-6">
                       <type.icon className="min-w-10 min-h-10 text-primary" />
