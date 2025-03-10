@@ -1,11 +1,10 @@
 import Script from "next/script"
-// import Image from "next/image"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Building2, Newspaper, ShoppingBag, Check, ArrowRight, Users, TrendingUp, Globe, MessageCircle } from "lucide-react"
 import Link from "next/link"
 import Head from "next/head"
-import { link } from "fs"
 
 export default function Home() {
   return (
@@ -261,7 +260,7 @@ export default function Home() {
                 },
               ].map((project, index) => (
                 <Card key={index} className="border border-border hover:shadow-md transition-shadow">
-                  <img src={project.image} alt={project.title} className="w-full h-68 object-cover" />
+                  <Image src={project.image} alt={project.title} width={500} height={300} className="w-full h-68 object-cover" />
                   <CardHeader>
                   <CardTitle className="text-2xl">{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>
