@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Website Pro - Buat Website untuk Bisnis Kamu",
-  description: "Buat website company profile, portal berita, atau toko online gratis dengan fitur lengkap",
+  description: "Buat website company profile, portal berita, atau toko online dengan fitur lengkap",
 }
 
 export default function RootLayout({
