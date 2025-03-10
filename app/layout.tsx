@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer"
 import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
-  title: "Ayo Gratis - Buat Website Gratis",
+  title: "Website Pro - Buat Website Gratis",
   description: "Buat website company profile, portal berita, atau toko online gratis dengan fitur lengkap",
 }
 
