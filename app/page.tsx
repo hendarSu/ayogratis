@@ -1,7 +1,7 @@
 import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { Newspaper, ShoppingBag, Check, Users, TrendingUp, Globe, MessageCircle } from "lucide-react"
+import { ShoppingBag, Check, Users, TrendingUp, Globe, MessageCircle } from "lucide-react"
 import Link from "next/link"
 import Head from "next/head"
 import Image from "next/image"
@@ -54,13 +54,13 @@ export default function Home() {
       features: ["Headline Menarik", "CTA (Call-to-Action)", "Penjelasan Produk", "Form Pembelian"],
       bgColor: "bg-pastel-blue",
     },
-    {
-      title: "Portal Berita",
-      description: "Buat portal berita atau blog dengan konten yang selalu up-to-date",
-      icon: Newspaper,
-      features: ["Manajemen Artikel", "Kategori & Tag", "Komentar Pembaca", "Integrasi Media Sosial"],
-      bgColor: "bg-pastel-green",
-    },
+    // {
+    //   title: "Portal Berita",
+    //   description: "Buat portal berita atau blog dengan konten yang selalu up-to-date",
+    //   icon: Newspaper,
+    //   features: ["Manajemen Artikel", "Kategori & Tag", "Komentar Pembaca", "Integrasi Media Sosial"],
+    //   bgColor: "bg-pastel-green",
+    // },
     // {
     //   title: "Company Profile",
     //   description: "Tampilkan profil dan layanan perusahaan Kamu secara profesional",
