@@ -61,20 +61,20 @@ export default function Home() {
       features: ["Manajemen Artikel", "Kategori & Tag", "Komentar Pembaca", "Integrasi Media Sosial"],
       bgColor: "bg-pastel-green",
     },
-    {
-      title: "Company Profile",
-      description: "Tampilkan profil dan layanan perusahaan Kamu secara profesional",
-      icon: Building2,
-      features: ["Halaman Tentang Kami", "Portofolio Proyek", "Formulir Kontak", "Testimoni Klien"],
-      bgColor: "bg-pastel-yellow",
-    },
-    {
-      title: "Personal Branding",
-      description: "Bangun personal branding Kamu dengan website profesional",
-      icon: Users,
-      features: ["Profil Pribadi", "Portofolio", "Blog Pribadi", "Testimoni"],
-      bgColor: "bg-pastel-purple",
-    }
+    // {
+    //   title: "Company Profile",
+    //   description: "Tampilkan profil dan layanan perusahaan Kamu secara profesional",
+    //   icon: Building2,
+    //   features: ["Halaman Tentang Kami", "Portofolio Proyek", "Formulir Kontak", "Testimoni Klien"],
+    //   bgColor: "bg-pastel-yellow",
+    // },
+    // {
+    //   title: "Personal Branding",
+    //   description: "Bangun personal branding Kamu dengan website profesional",
+    //   icon: Users,
+    //   features: ["Profil Pribadi", "Portofolio", "Blog Pribadi", "Testimoni"],
+    //   bgColor: "bg-pastel-purple",
+    // }
   ];
 
   const clients = [
