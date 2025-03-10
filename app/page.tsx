@@ -1,7 +1,7 @@
 import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { Building2, Newspaper, ShoppingBag, Check, Users, TrendingUp, Globe, MessageCircle } from "lucide-react"
+import { Newspaper, ShoppingBag, Check, Users, TrendingUp, Globe, MessageCircle } from "lucide-react"
 import Link from "next/link"
 import Head from "next/head"
 import Image from "next/image"
