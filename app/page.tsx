@@ -98,12 +98,12 @@ export default function Home() {
         <title>Buat Website untuk Bisnis Kamu</title>
         <meta name="description" content="Tingkatkan kehadiran online Kamu dengan website profesional. Solusi digital untuk semua jenis bisnis." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Buat Website Gratis untuk Bisnis Kamu" />
+        <meta property="og:title" content="Buat Website untuk Bisnis Kamu untuk Bisnis Kamu" />
         <meta property="og:description" content="Tingkatkan kehadiran online Kamu dengan website profesional. Solusi digital untuk semua jenis bisnis." />
         <meta property="og:image" content="/assets/og-image.jpg" />
         <meta property="og:url" content="https://ayogratis.web.id" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Buat Website Gratis untuk Bisnis Kamu" />
+        <meta name="twitter:title" content="Buat Website untuk Bisnis Kamu untuk Bisnis Kamu" />
         <meta name="twitter:description" content="Tingkatkan kehadiran online Kamu dengan website profesional. Solusi digital untuk semua jenis bisnis." />
         <meta name="twitter:image" content="/assets/twitter-image.jpg" />
         <meta name="robots" content="index, follow" />
