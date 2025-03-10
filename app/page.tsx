@@ -96,15 +96,15 @@ export default function Home() {
     <>
       <Head>
         <title>Buat Website untuk Bisnis Kamu</title>
-        <meta name="description" content="Tingkatkan kehadiran online Kamu dengan website profesional tanpa biaya. Solusi digital untuk semua jenis bisnis." />
+        <meta name="description" content="Tingkatkan kehadiran online Kamu dengan website profesional. Solusi digital untuk semua jenis bisnis." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="Buat Website Gratis untuk Bisnis Kamu" />
-        <meta property="og:description" content="Tingkatkan kehadiran online Kamu dengan website profesional tanpa biaya. Solusi digital untuk semua jenis bisnis." />
+        <meta property="og:description" content="Tingkatkan kehadiran online Kamu dengan website profesional. Solusi digital untuk semua jenis bisnis." />
         <meta property="og:image" content="/assets/og-image.jpg" />
         <meta property="og:url" content="https://ayogratis.web.id" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Buat Website Gratis untuk Bisnis Kamu" />
-        <meta name="twitter:description" content="Tingkatkan kehadiran online Kamu dengan website profesional tanpa biaya. Solusi digital untuk semua jenis bisnis." />
+        <meta name="twitter:description" content="Tingkatkan kehadiran online Kamu dengan website profesional. Solusi digital untuk semua jenis bisnis." />
         <meta name="twitter:image" content="/assets/twitter-image.jpg" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://ayogratis.web.id" />
@@ -114,7 +114,7 @@ export default function Home() {
             "@type": "WebSite",
             "url": "https://ayogratis.web.id",
             "name": "Website Gratis untuk Bisnis Kamu",
-            "description": "Tingkatkan kehadiran online Kamu dengan website profesional tanpa biaya. Solusi digital untuk semua jenis bisnis.",
+            "description": "Tingkatkan kehadiran online Kamu dengan website profesional. Solusi digital untuk semua jenis bisnis.",
           })}
         </script>
       </Head>
@@ -145,7 +145,7 @@ export default function Home() {
                 Buat Website untuk Bisnis Kamu
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground">
-                Tingkatkan kehadiran online Kamu dengan website profesional tanpa biaya. Solusi digital untuk semua jenis
+                Tingkatkan kehadiran online Kamu dengan website profesional. Solusi digital untuk semua jenis
                 bisnis.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -219,7 +219,7 @@ export default function Home() {
             <div className="max-w-2xl mx-auto space-y-6">
               <h2 className="text-3xl sm:text-4xl font-bold">Siap Membawa Bisnis Kamu ke Dunia Digital?</h2>
               <p className="text-lg opacity-90">
-                Mulai buat website profesional untuk bisnis Kamu sekarang, tanpa biaya dan tanpa perlu keahlian coding.
+                Mulai buat website profesional untuk bisnis Kamu sekarang, dan tanpa perlu keahlian coding.
               </p>
 
               <br />
@@ -266,7 +266,7 @@ export default function Home() {
             <div className="max-w-2xl mx-auto space-y-6">
               <h2 className="text-3xl sm:text-4xl font-bold">Ayo, Jangan tunggu lama lagi</h2>
               <p className="text-lg opacity-90">
-                Mulai buat website profesional untuk bisnis Kamu sekarang, tanpa biaya dan tanpa perlu keahlian coding.
+                Mulai buat website profesional untuk bisnis Kamu sekarang, dan tanpa perlu keahlian coding.
               </p>
 
               <br />
