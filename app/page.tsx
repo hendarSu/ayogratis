@@ -45,7 +45,7 @@ export default function Home() {
       </Script>
       <main className="min-h-screen">
         {/* Floating WhatsApp Button */}
-        <Link href="https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website" target="_blank">
+        <Link href="https://wa.me/62 85724224946?text=Hai%20Website%20PRO,%20saya%20ingin%20membuat%20website" target="_blank">
           <div className="fixed bottom-4 right-4 md:bottom-8 md:right-8 bg-primary text-primary-foreground p-3 rounded-full shadow-lg cursor-pointer">
             <MessageCircle className="w-6 h-6" />
           </div>
@@ -64,12 +64,12 @@ export default function Home() {
                 bisnis.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
+                <Link href="https://wa.me/62 85724224946?text=Hai%20Website%20PRO,%20saya%20ingin%20membuat%20website">
                   <Button size="lg" className="notion-button">
                     Mulai Buat Website
                   </Button>
                 </Link>
-                <Link href="https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
+                <Link href="https://wa.me/62 85724224946?text=Hai%20Website%20PRO,%20saya%20ingin%20membuat%20website">
                   <Button size="lg" variant="outline" className="notion-button bg-background text-black">
                   Pelajari Lebih Lanjut
                   </Button>
@@ -137,7 +137,7 @@ export default function Home() {
               </li>
             ))}
                 </ul>
-                <Link href={`https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website%20${type.title}`}>
+                <Link href={`https://wa.me/62 85724224946?text=Hai%20Website%20PRO,%20saya%20ingin%20membuat%20website%20${type.title}`}>
             <Button className="notion-button w-full mt-6">
               Buat {type.title} <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
@@ -215,7 +215,7 @@ export default function Home() {
               
               <br />
               
-              <Link href="https://wa.me/6281222002811?text=Hai%20ka,%20saya%20ingin%20membuat%20website">
+              <Link href="https://wa.me/62 85724224946?text=Hai%20Website%20PRO,%20saya%20ingin%20membuat%20website">
                 <Button
                   size="lg"
                   variant="secondary"
