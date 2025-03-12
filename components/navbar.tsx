@@ -19,7 +19,7 @@ export function Navbar() {
               Masuk
             </Button> */}
             <Button asChild className="hidden md:inline-flex notion-button">
-              <Link href="https://wa.me/62 85724224946?text=Hai%20Website%20PRO,%20saya%20ingin%20membuat%20website">
+              <Link href="https://wa.me/6285724224946?text=Hai%20Website%20PRO,%20saya%20ingin%20membuat%20website">
               <MessageCircle className="w-4 h-4 mr-2" />
               Hubungi Kami
               </Link>
